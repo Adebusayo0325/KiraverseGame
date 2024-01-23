@@ -104,7 +104,7 @@ btn1.addEventListener("click", function (e) {
 
  removeCurrentClasses();
 
- buttonns[0].classList.add('current')
+ btn1.classList.add('current')
 
   setBgImage();
 });
@@ -125,7 +125,7 @@ btn2.addEventListener("click", function () {
     btn2.classList.add('show')
     removeCurrentClasses();
 
- buttonns[1].classList.add('current')
+ btn2.classList.add('current')
 
   setBgImage();
 });
@@ -145,7 +145,7 @@ removeActiveClasses()
     btn3.classList.add('show')
 removeCurrentClasses();
 
- buttonns[2].classList.add('current')
+ btn3.classList.add('current')
 
   setBgImage();
 });
@@ -163,7 +163,7 @@ btn4.addEventListener("click", function () {
 removeActiveClasses()
     btn3.classList.add('show')
 removeCurrentClasses();
- buttonns[3].classList.add('current')
+ btn4.classList.add('current')
 
   setBgImage();
 });
