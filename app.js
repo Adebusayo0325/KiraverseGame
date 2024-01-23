@@ -85,6 +85,7 @@ paleTop: "60%",
   },
 ];
 
+let current = 0;
 
 
 btn1.addEventListener("click", function (e) {
@@ -102,10 +103,8 @@ btn1.addEventListener("click", function (e) {
     removeActiveClasses()
     e.target.classList.add('show')
 
- removeCurrentClasses();
 
- btn1.classList.add('current')
-
+current = 0
   setBgImage();
 });
 
@@ -123,10 +122,7 @@ btn2.addEventListener("click", function () {
 
   removeActiveClasses()
     btn2.classList.add('show')
-    removeCurrentClasses();
-
- btn2.classList.add('current')
-
+current = 1
   setBgImage();
 });
 
@@ -143,10 +139,7 @@ btn3.addEventListener("click", function () {
     design.style.left = "80%";
 removeActiveClasses()
     btn3.classList.add('show')
-removeCurrentClasses();
-
- btn3.classList.add('current')
-
+current = 2
   setBgImage();
 });
 btn4.addEventListener("click", function () {
@@ -162,9 +155,7 @@ btn4.addEventListener("click", function () {
     design.style.left = "80%";
 removeActiveClasses()
     btn3.classList.add('show')
-removeCurrentClasses();
- btn4.classList.add('current')
-
+    current = 3
   setBgImage();
 });
 console.log(arrx);
@@ -174,7 +165,6 @@ function setBgImage() {
     document.querySelector(".backmatch").style.backgroundImage;
 }
 
-let current = 0;
 
 let interval = setInterval(run, 5000);
 
