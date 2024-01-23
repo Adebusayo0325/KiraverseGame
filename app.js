@@ -102,7 +102,10 @@ btn1.addEventListener("click", function (e) {
     removeActiveClasses()
     e.target.classList.add('show')
 
- 
+ removeCurrentClasses();
+
+ buttonns[0].classList.add('current')
+
   setBgImage();
 });
 
@@ -120,6 +123,10 @@ btn2.addEventListener("click", function () {
 
   removeActiveClasses()
     btn2.classList.add('show')
+    removeCurrentClasses();
+
+ buttonns[1].classList.add('current')
+
   setBgImage();
 });
 
@@ -136,6 +143,9 @@ btn3.addEventListener("click", function () {
     design.style.left = "80%";
 removeActiveClasses()
     btn3.classList.add('show')
+removeCurrentClasses();
+
+ buttonns[2].classList.add('current')
 
   setBgImage();
 });
@@ -152,6 +162,8 @@ btn4.addEventListener("click", function () {
     design.style.left = "80%";
 removeActiveClasses()
     btn3.classList.add('show')
+removeCurrentClasses();
+ buttonns[3].classList.add('current')
 
   setBgImage();
 });
