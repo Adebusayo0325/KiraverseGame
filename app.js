@@ -105,6 +105,11 @@ btn1.addEventListener("click", function (e) {
 
 
 current = 0
+
+removeCurrentClasses();
+
+ buttonns[current].classList.add('current')
+
   setBgImage();
 });
 
@@ -123,6 +128,10 @@ btn2.addEventListener("click", function () {
   removeActiveClasses()
     btn2.classList.add('show')
 current = 1
+removeCurrentClasses();
+
+ buttonns[current].classList.add('current')
+
   setBgImage();
 });
 
@@ -140,6 +149,9 @@ btn3.addEventListener("click", function () {
 removeActiveClasses()
     btn3.classList.add('show')
 current = 2
+removeCurrentClasses();
+ buttonns[current].classList.add('current')
+
   setBgImage();
 });
 btn4.addEventListener("click", function () {
@@ -156,6 +168,10 @@ btn4.addEventListener("click", function () {
 removeActiveClasses()
     btn3.classList.add('show')
     current = 3
+    removeCurrentClasses();
+
+ buttonns[current].classList.add('current')
+
   setBgImage();
 });
 console.log(arrx);
